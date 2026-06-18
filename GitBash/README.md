@@ -1,9 +1,10 @@
-# Jesus Perez - Tecnicatura 2026
+# Cristian Vidal - Tecnicatura 2026
+
 Repositorio de trabajos practicos y clases
 
+# CLASE 1
 
-# CLASE 1 
->Lo que vimos en la clase anterior:
+> Lo que vimos en la clase anterior:
 
 Abrimos la terminal de Git Bash en Window o la terminal de Ubuntu, tambien la terminal de Mac, y comenzamos con los siguientes comandos y creación de directorios<br>
 
@@ -29,7 +30,7 @@ cd /mnt/d #Cambia de directorio usando WSL Ubuntu en window
 
 ## AHORA COMENZAMOS CON LA CREACIÓN DE CARPETAS
 
->Lo vamos a hacer justos desde zoom
+> Lo vamos a hacer justos desde zoom
 
 ```sh
 cd ..
@@ -44,10 +45,13 @@ mkdir JavaScript
 ```
 
 Revisar y ejecutar cada comando, hacerlo como practica<br>
->>Profesor Ariel Betancud
+
+> > Profesor Ariel Betancud
 
 # CLASE 2 Git Bash
->Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador
+
+> Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador
+
 ```sh
 
 touch vacio.txt #Crea un archivo con su extención: ESCRIBIR DENTRO
@@ -63,6 +67,7 @@ rm --help #Muestra como funciona el comando
 ```
 
 ## CREAR UN REPOSITORIO DE GIT Y HAZ TU PRIMER COMMIT
+
 ```sh
 
 cd tecnicatura
@@ -71,7 +76,8 @@ cd class-git #Entramos en la carpeta que necesitamos trabajar
 git init #Creamos un repositorio en la carpeta central, se crea el archivo .git
 ```
 
->IMPORTANTE: SI YA ESTA CREADO EL REPOSITORIO NO SE DEBE VOLVER A PONER ESTE COMANDO
+> IMPORTANTE: SI YA ESTA CREADO EL REPOSITORIO NO SE DEBE VOLVER A PONER ESTE COMANDO
+
 ```sh
 
 code .  #Abrimos VSC, el punto hace que se abra el archivo en el que estamos situados
@@ -86,7 +92,8 @@ git config --list #Configuraciones por defecto, faltan cosas importantes
 git config --list --show-origin #Veremos donde están las configuraciones guardadas
 ```
 
->LAS CONFIGURACIONES SI ESTÁN HECHAS NO SE DEBEN HACER DE NUEVO
+> LAS CONFIGURACIONES SI ESTÁN HECHAS NO SE DEBEN HACER DE NUEVO
+
 ```sh
 
 git config --global user.name "Ariel Betancud"
@@ -102,14 +109,17 @@ git log historia.txt #Vemos toda la historia de este archivo, el número largo e
 ```
 
 Revisar y ejecutar cada comando, hacerlo como practica<br>
->>Profesor Ariel Betancud
+
+> > Profesor Ariel Betancud
 
 # CLASE 3 MIÉRCOLES 29 DE ABRIL DEL 2026
->Analizar cambios en los archivos de tu proyecto Git parte 3
+
+> Analizar cambios en los archivos de tu proyecto Git parte 3
 
 Ingresamos de la siguiente manera:
 
 Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
+
 ```sh
 
 cd tecnicaturagit #Ingresamos al direcotorio donde están nuestras carpetas de trabajo
@@ -126,15 +136,17 @@ cd class-git #Entramos para crear el README.md para este sector.
 touch README.md #Vamos a crear un archivo nuevo, md significa markdown y se pueden trabajar con editores de texto, este es un lenguaje que transforma el texto a html.
 ```
 
->Enlace a la documentación en GitHub de MARKDOWN
+> Enlace a la documentación en GitHub de MARKDOWN
 
 Leemos la documentación para ir creando en README.md como lo enseña GitHub.
+
 ```sh
 
 code . #Abrimos VSC para editar el archivo.
 ```
 
->Empezamos a cargar lo visto en las clases anteriores (Comandos) en el README y pasamos a commitear
+> Empezamos a cargar lo visto en las clases anteriores (Comandos) en el README y pasamos a commitear
+
 ```sh
 
 git status
@@ -148,16 +160,19 @@ cd ..
 ```
 
 Revisar y ejecutar cada comando, hacerlo como practica
->>Profesor Ariel Betancud
+
+> > Profesor Ariel Betancud
 
 # CLASE 4 MIÉRCOLES 6 DE MAYO DEL 2026
->Analizar cambios en los archivos de tu proyecto Git parte 4
+
+> Analizar cambios en los archivos de tu proyecto Git parte 4
 
 Ingresamos de la siguiente manera:
 
 Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
 
->TAREA -> AGREGAR LOS COMENTARIOS EN LOS COMANDOS, PARA SABER QUE PASA CON CADA UNO.
+> TAREA -> AGREGAR LOS COMENTARIOS EN LOS COMANDOS, PARA SABER QUE PASA CON CADA UNO.
+
 ```sh
 
 cd tecnicatura
@@ -172,7 +187,7 @@ git add .
 git status
 git commit #Sin agregar -m veremos que pasa, se abre el editor de texto vim
 #Agregar mensaje y salir con
-Esc #Presionamos Escape 
+Esc #Presionamos Escape
 :wq! + enter #Y ya salimos si estamos en git bash con window
 Esc + shift + z + z #Salimos del mensaje para el commit, en linux, esto anda en algunas terminales
 #Agregamos otra línea de mensaje en historia.txt desde VSC: estoy estudiando programación
@@ -193,18 +208,20 @@ cd ..
 cd ..
 ```
 
->La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
+> La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
 
 Revisar y ejecutar cada comando, hacerlo como practica<br>
 Profesor Ariel Betancud
 
->¿Qué es Gitflow?
+> ¿Qué es Gitflow?
+
 ```sh
 
  Gitflow es un modelo alternativo de creación de ramas en Git en el que se utilizan ramas de función y varias ramas principales. Fue Vincent Driessen en nvie quien lo publicó por primera vez y quien lo popularizó.
 ```
 
->¿Qué es branch (rama) y cómo funciona un merge en git?
+> ¿Qué es branch (rama) y cómo funciona un merge en git?
+
 ```sh
 
 Tenemos una rama llamada master y es donde están los cambios de nuestros archivos, con cada commit creamos una nueva versión
@@ -228,16 +245,19 @@ Podemos tener tantas ramas como queramos, tantos repositorios como queramos, lo 
 ```
 
 Hoy a sido un poco de teoría, repaso de todo lo que les dió la profe Naty.
->>Profesor Ariel Betancud
+
+> > Profesor Ariel Betancud
 
 # CLASE 6 MIÉRCOLES 20 DE MAYO DEL 2026
->Volver en el tiempo en nuestro repositorio utilizando reset y checkout parte 6
+
+> Volver en el tiempo en nuestro repositorio utilizando reset y checkout parte 6
 
 Ingresamos de la siguiente manera:<br>
 
 Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.<br>
 
->TAREA -> AGREGAR LOS COMENTARIOS EN LOS COMANDOS, PARA SABER QUE PASA CON CADA UNO.
+> TAREA -> AGREGAR LOS COMENTARIOS EN LOS COMANDOS, PARA SABER QUE PASA CON CADA UNO.
+
 ```sh
 
 cd tecnicatura
@@ -269,7 +289,7 @@ git status #Ya esta todo en memoria ram, a git solo le importan los archivos, gu
 git commit -m "Commiteamos lo último de hoy"
 git log #vemos lo nuevo que hemos hecho sin lo que borramos con el reset fuerte
 hacer cambios en historia.txt #Cambiamos la última línea y
-ctrl + s 
+ctrl + s
 git diff
 #Agregar cambios al archivo historia.txt una vez más
 git commit -am "cambio en la última línea del historia.txt"
@@ -297,17 +317,20 @@ cd ..
 cd ..
 ```
 
->La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
+> La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
 
 Revisar y ejecutar cada comando, hacerlo como practica<br>
->>Profesor Ariel Betancud
+
+> > Profesor Ariel Betancud
 
 # CLASE 7 MIÉRCOLES 27 DE MAYO DEL 2026
->Git reset vs. Git rm parte 7
+
+> Git reset vs. Git rm parte 7
 
 Los comandos git reset y git rm tienen utilidades muy diferentes, pero pueden confundirse fácilmente.
 
->GIT RESET
+> GIT RESET
+
 ```sh
 
 El comando git reset es una herramienta poderosa que te permite deshacer o revertir cambios en tu repositorio de Git. Lo puedes ejecutar de tres maneras diferentes, con las líneas de commando --soft, --mixed y --hard.
@@ -318,6 +341,7 @@ Tres árboles en Git Para entender lo anterior, recordemos que los “tres árbo
 
 La mejor forma de entender estos mecanismos es creando un conjunto de cambios en un repositorio y siguiéndolos a través de los tres árboles. Averigüémoslo.
 ```
+
 Ingresamos de la siguiente manera:<br>
 
 Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
@@ -325,6 +349,7 @@ Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hace
 TAREA -> AGREGAR LOS COMENTARIOS EN LOS COMANDOS, PARA SABER QUE PASA CON CADA UNO.
 
 Hagan esto si quieren hacer pruebas:<br>
+
 ```sh
 cd tecnicatura #Vamos a hacer pruebas, es por esto que creamos una carpeta nueva
 cd practicas #Entramos en la carpeta
@@ -336,18 +361,20 @@ git commit -m"Iniciando el primer commit"
 
 #Comenzar con las pruebas de git reset
 
->¿Cómo funciona Git Reset en tu flujo de trabajo? 
+> ¿Cómo funciona Git Reset en tu flujo de trabajo?
+
 ```sh
 
 Git reset permite moverte entre diferentes commits para deshacer o rehacer cambios. Git guarda todo lo nuevo del repositorio como commits, que son instantáneas del estado del código en un momento dado y existen variaciones de este comando.
-Variaciones de Git Reset 
-git reset --soft: Borra el historial y los registros de Git de commits anteriores, pero guarda los cambios en Staging para aplicar las últimas actualizaciones a un nuevo commit. 
-git reset --hard: Deshace todo, absolutamente todo. Toda la información de los commits y del área de staging se elimina del historial. 
-git reset --mixed: Borra todo, exactamente todo. Toda la información de los commits y del área de staging se elimina del historial. 
+Variaciones de Git Reset
+git reset --soft: Borra el historial y los registros de Git de commits anteriores, pero guarda los cambios en Staging para aplicar las últimas actualizaciones a un nuevo commit.
+git reset --hard: Deshace todo, absolutamente todo. Toda la información de los commits y del área de staging se elimina del historial.
+git reset --mixed: Borra todo, exactamente todo. Toda la información de los commits y del área de staging se elimina del historial.
 git reset HEAD: El comando git reset saca archivos del área de staging sin borrarlos ni realizar otras acciones. Esto impide que los últimos cambios en estos archivos se envíen al último commit. Podemos incluirlos de nuevo en staging con git add si cambiamos de opinión. Ten en cuenta que, si deshaces commits en un repositorio compartido en GitHub, estarás cambiando su historia y esto puede causar problemas de sincronización con otros colaboradores.
 ```
 
->¿Qué es git reset HEAD? 
+> ¿Qué es git reset HEAD?
+
 ```sh
 
 git reset HEAD es un comando que te permite revertir los cambios que ya habías preparado para subir, y moverlos de vuelta a tu proyecto. Con este comando puedes cancelar los cambios que ya habías agregado, para que puedas revisarlos, modificarlos o deshacerlos antes de confirmarlos con un commit.
@@ -358,7 +385,8 @@ git rm --cached: Elimina archivos del repositorio local y del área de staging, 
 git rm --force: Elimina los archivos de Git y del disco duro. Git guarda todo, por lo que podemos recuperar archivos eliminados si es necesario (empleando comandos avanzados). ¡Al usar git rm lo que haremos será eliminar este archivo completamente de git!
 ```
 
->¿Cuál es la diferencia entre git rm y git reset Head? 
+> ¿Cuál es la diferencia entre git rm y git reset Head?
+
 ```sh
 
 La diferencia principal entre git rm y git reset HEAD radica en que git rm elimina archivos del repositorio y de la historia del proyecto, mientras que git reset saca los cambios del área de preparación y los mueve del espacio de trabajo, sin afectar la historia del repositorio.
@@ -366,7 +394,8 @@ La diferencia principal entre git rm y git reset HEAD radica en que git rm elimi
 Es importante tener en cuenta el efecto que cada comando tiene en el proyecto y usarlos según tus necesidades y objetivos específicos.
 ```
 
->¿Cuándo utilizar git reset en lugar de git revert? 
+> ¿Cuándo utilizar git reset en lugar de git revert?
+
 ```sh
 
 Para reescribir la historia del repositorio y eliminar confirmaciones anteriores, se utiliza git reset. Para deshacer cambios de confirmaciones anteriores de forma segura sin modificar la historia del repositorio, se emplea git revert.
@@ -385,10 +414,12 @@ La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, co
 ```
 
 Revisar y ejecutar cada comando, hacerlo como practica<br>
->>Profesor Ariel Betancud
+
+> > Profesor Ariel Betancud
 
 # CLASE 8-A MIÉRCOLES 3 DE JUNIO DEL 2026
->Flujo de trabajo básico con un repositorio remoto parte 8
+
+> Flujo de trabajo básico con un repositorio remoto parte 8
 
 Cuando empiezas a trabajar en un entorno local, el proyecto vive únicamente en tu computadora. Esto significa que no hay forma de que otros miembros del equipo trabajen en él.<br>
 
@@ -398,7 +429,8 @@ Estos servidores remotos pueden estar alojados en GitHub, GitLab, BitBucket, ent
 
 Esto significa que debes aprender algunos nuevos comandos<br>
 
->Comandos para trabajo remoto con GIT
+> Comandos para trabajo remoto con GIT
+
 ```sh
 git clone url_del_servidor_remoto #Nos permite descargar los archivos de la última versión de la rama principal y todo el historial de cambios en la carpeta .git
 git push #Luego de hacer git add y git commit debemos ejecutar este comando para mandar los cambios al servidor remoto.
@@ -414,7 +446,7 @@ git shortlog #Indica que commits ha realizado un usuario, mostrando el usuario y
 git log --graph --oneline --decorate --all
 git log -3 #Limitamos el número de commits.
 git log --after=“2018-1-2”
-git log --after=“today” 
+git log --after=“today”
 git log --after=“2018-1-2” --before=“today” #Commits para localizar por fechas.
 git log --author=“Name Author” #Commits hechos por autor que cumplan exactamente con el nombre.
 git log --grep=“INVIE” #Busca los commits que cumplan tal cual está escrito entre las comillas.
@@ -425,10 +457,12 @@ git log > log.txt #guardar los logs en un archivo txt
 ```
 
 La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.<br>
->>Profesor Ariel Betancud
+
+> > Profesor Ariel Betancud
 
 # CLASE 8-B MIÉRCOLES 3 DE JUNIO DEL 2026
->Introducción a las ramas o branches de Git parte 9
+
+> Introducción a las ramas o branches de Git parte 9
 
 Cuando entramos en el proyecto veremos que nos encontramos con la rama master, y es a partir de allí que debe saber que esta es la rama madre o principal rama, y las otras ramas se crean para no afectar a la master<br>
 
@@ -436,10 +470,11 @@ Las ramas (branches) son la forma de hacer cambios en nuestro proyecto sin afect
 
 La cabecera o HEAD representan la rama y el commit de esa rama donde estamos trabajando. Por defecto, esta cabecera aparecerá en el último commit de nuestra rama principal. Pero podemos cambiarlo al crear una rama (git branch rama, git checkout -b rama) o movernos en el tiempo a cualquier otro commit de cualquier otra rama con los comandos (git reset id-commit, git checkout rama-o-id-commit).<br>
 
->Repasa: ¿Qué es Git?
+> Repasa: ¿Qué es Git?
 
->Cómo funcionan las ramas en GIT
->Las ramas son la manera de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto porque queremos trabajar una parte muy específica de la aplicación o simplemente experimentar.
+> Cómo funcionan las ramas en GIT
+> Las ramas son la manera de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto porque queremos trabajar una parte muy específica de la aplicación o simplemente experimentar.
+
 ```sh
 
 git branch nombre-rama #Con este comando se genera una nueva rama.
@@ -449,11 +484,12 @@ git reset id-commit #Nos lleva a cualquier commit no importa la rama, ya que ide
 git checkout rama-o-id-commit #Nos lleva a cualquier commit sin borrar los commit posteriores al tag seleccionado.
 ```
 
->Vamos a hacer una practica: mientras la rama master esta cambiando normalmente, vamos a crear una rama paralela que va a crear nuevas secciones: osea una sección y a esta rama la vamos a llamar segunda(second) y con esto, la vamos a fusionar para ver como queda en la rama master y así entender el flujo de ramas entre git. Al crear otra rama estamos creando una copia de todos los commit que ya tiene la rama master en la nueva rama y todos los cambios que hagamos en esta nueva rama, no los va a ver la rama master, hasta que no la volvamos a fusionar con un proceso que se llama merge.
+> Vamos a hacer una practica: mientras la rama master esta cambiando normalmente, vamos a crear una rama paralela que va a crear nuevas secciones: osea una sección y a esta rama la vamos a llamar segunda(second) y con esto, la vamos a fusionar para ver como queda en la rama master y así entender el flujo de ramas entre git. Al crear otra rama estamos creando una copia de todos los commit que ya tiene la rama master en la nueva rama y todos los cambios que hagamos en esta nueva rama, no los va a ver la rama master, hasta que no la volvamos a fusionar con un proceso que se llama merge.
 
 Abrir terminal #En ubuntu<br>
 
 Abrir como adminstrados git bash #En window<br>
+
 ```sh
 
 cd Tecnicatura
@@ -493,24 +529,25 @@ La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, co
 Profesor Ariel Betancud
 
 ## CLASE 9-A MIÉRCOLES 10 DE JUNIO DEL 2026
->Fusión de ramas con Git merge parte 10
+
+> Fusión de ramas con Git merge parte 10
 
 La fusión en Git es la forma en que este sistema une un historial bifurcado. El comando git merge permite integrar líneas de desarrollo independientes generadas por git branch en una sola rama. Con este comando, podemos crear un nuevo commit que combina dos ramas o branches: la rama actual y la rama que se indica después del comando.
 
 Estos comandos de fusión del merge afectan solo a la rama actual y no a la rama de destino. Por lo tanto, te recomendamos utilizar git checkout para seleccionar la rama actual y git branch -d para eliminar la rama de destino obsoleta.
 
-
->Funcionamiento de Git merge
+> Funcionamiento de Git merge
 
 Git merge fusiona secuencias de confirmaciones en un solo historial, generalmente para combinar dos ramas. Busca una confirmación de base común y genera una confirmación de fusión que representa la combinación de las dos ramas hasta el resultado final.
 
->¿Cómo unir dos ramas en git?
+> ¿Cómo unir dos ramas en git?
 
 Ahora bien, para combinar ramas en tu repositorio local, usa git checkout para cambiar a la rama donde deseas fusionar. Por lo general, esta es la rama principal. Luego, emplea git merge y especifica el nombre de la otra rama que deseas traer a esta rama. Ten en cuenta que esto es una combinación de avance rápido.
 
->¿Cómo realizar un merge en git?
+> ¿Cómo realizar un merge en git?
 
 Para hacer un merge en Git, primero asegúrate de estar en la rama correcta. Después, usa el comando git merge seguido del nombre de la rama que quieres combinar. Por ejemplo, si quieres crear un nuevo commit en la rama master con los cambios de la rama segunda, usa este comando:
+
 ```sh
 git checkout master
 git merge segunda
@@ -522,7 +559,8 @@ En este ejemplo, vamos a crear un nuevo commit en la rama master combinando los 
 
 Git es asombroso porque puede saber cuáles cambios deben conservarse en una rama y cuáles no. En casos de conflictos, asegúrate de guardar tus cambios antes de hacer git checkout para evitar perder tu trabajo.
 
->Comandos básicos de GitHub:
+> Comandos básicos de GitHub:
+
 ```sh
 
 git init # crear un repositorio, si ya esta en la nube traerlo sin hacer git init
@@ -550,7 +588,8 @@ git diff “codigo de version 1” “codigo de version 2” #comparar cambios e
 git diff #comparar directorio con staging.
 ```
 
->Comando en producción: TUVE QUE SOLUCIONAR UN CONFLICTO
+> Comando en producción: TUVE QUE SOLUCIONAR UN CONFLICTO
+
 ```sh
 git status #En rama segunda: hacemos cambios en el archivo y guardamos
 git commit -am "Finalizado el cambio en rama segunda" #enter
@@ -577,12 +616,13 @@ git merge segunda #y terminamos con esto
 
 La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
 
->>Profesor Ariel Betancud
+> > Profesor Ariel Betancud
 
 ## CLASE 9-B MIÉRCOLES 10 DE JUNIO DEL 2026
->Resolución de conflictos al hacer merge
 
->Sección lectura
+> Resolución de conflictos al hacer merge
+
+> Sección lectura
 
 Git nunca borra nada, a menos que nosotros se lo indiquemos. Cuando usamos los comandos git merge o git checkout estamos cambiando de rama o creando un nuevo commit, no borrando ramas ni commits (recuerda que puedes borrar commits con git reset y ramas con git branch -d).
 
@@ -594,13 +634,16 @@ Recuerda que siempre debemos crear un nuevo commit para aplicar los cambios del 
 
 Los archivos con conflictos por el comando git merge entran en un nuevo estado que conocemos como Unmerged. Funcionan muy parecido a los archivos en estado Unstaged, algo así como un estado intermedio entre Untracked y Unstaged. Solo debemos ejecutar git add para pasarlos al área de staging y git commit para aplicar los cambios en el repositorio.
 
->Cómo revertir un merge Si nos hemos equivocado y queremos cancelar el merge, debemos usar el siguiente comando:
+> Cómo revertir un merge Si nos hemos equivocado y queremos cancelar el merge, debemos usar el siguiente comando:
+
 ```sh
 git merge --abort
 ```
->Conflictos en repositorios remotos Al trabajar con otras personas, es necesario utilizar un repositorio remoto.
-­
--Para copiar el repositorio remoto al directorio de trabajo local, se utiliza el comando git clone , y para enviar cambios al repositorio remoto se utiliza git push.
+
+> Conflictos en repositorios remotos Al trabajar con otras personas, es necesario utilizar un repositorio remoto.
+> ­
+> -Para copiar el repositorio remoto al directorio de trabajo local, se utiliza el comando git clone , y para enviar cambios al repositorio remoto se utiliza git push.
+
 ```sh
 git clone enlace-ssh
 git fetch
@@ -620,6 +663,7 @@ git checkout master
 git merge second #Mergeamos los cambios a la rama master
 git push origin master
 ```
+
 -Para actualizar el repositorio local se hace uso del comando git fetch, luego se debe fusionar los datos traídos con los locales usando git merge.
 
 Para traer los datos y fusionarlos a la vez, en un solo comando, se usa git pull.
@@ -628,10 +672,12 @@ Para traer los datos y fusionarlos a la vez, en un solo comando, se usa git pull
 
 ­- Para generar nuevas ramas, hay que posicionarse sobre la rama que se desea copiar y utilizar el comando git branch .
 
- Configuración muy importante para cambiar el nombre por default que recibe la rama principal (master)
+Configuración muy importante para cambiar el nombre por default que recibe la rama principal (master)
+
 ```sh
 git config --global init.defaultBranch main  #A partir de este momento cada repositorio creado recibira el nombre main por default
 ```
+
 Para saltar entre ramas, se usa el comando git checkout
 
 ­- Una vez realizado los cambios en la rama, estas deben fusionarse con git merge.
@@ -647,6 +693,7 @@ Repasa qué es un branch
 Sección Práctica
 
 ### Hacemos cambios estando en la rama master, en el archivo de trabajo
+
 ```sh
 ctrl  + s
 git status
@@ -659,11 +706,13 @@ git checkout second #volvemos a la rama second
 git merge master #traemos los cambios desde la master y tenemos las dos ramas actualizadas
 git push origin second
 ```
+
 Ahora vamos a crear un conflicto para ver como salimos de el, vamos a cargar datos nuevos creando un archivo html estando en la rama second, y también vamos a hacer lo mismo estando en la master y veremos como lo solucionamos.
 
 Abrimos el archivo html y lo modificamos estando en la rama second, ctrl + s para guardar
 
 Luego commiteamos en la rama second y pasamos a la rama master, hacemos modificaciones también, guardar y commitear, hacer un merge estando en master: pongo en orden los comandos abajo.
+
 ```sh
 ctrl + s #Guardamos los cambios en la rama second, ponemos cambios en el archivo html
 git commit -am "Modifique el html y el color del texto" es un ejemplo
@@ -676,20 +725,23 @@ git merge second #Hacemos un merge estando en master y veremos el conflicto
 Para solucionar el conflicto podemos abrir el archivo con el editor de texto y modificar lo que nos este señalando y guardamos, esto en el html, lo podemos hacer desde VSC seleccionando: el cambio entrante.
 
 Debemos ahora commitear estos cambios, abajo pongo los comandos.
+
 ```sh
 git status
 git commit -am "Solución de conflictos al mergear las ramas"
 git checkout second #Seguiremos con la versión anterior, porque el merge fue en master
 git merge master #Ahora pasamos los cambios a la rama second.
 ```
+
 La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
 
->>Profesor Ariel Betancud
+> > Profesor Ariel Betancud
 
 ## LECTURA 1-A MIÉRCOLES 10 DE JUNIO DEL 2026
->Cómo funcionan las llaves públicas y privadas
 
->Sección lectura
+> Cómo funcionan las llaves públicas y privadas
+
+> Sección lectura
 
 Las llaves públicas y privadas, conocidas también como cifrado asimétrico de un solo camino, sirven para mandar mensajes privados entre varios nodos con la lógica de que firmas tu mensaje con una llave pública vinculada con una llave privada que puede leer el mensaje.
 
@@ -711,10 +763,11 @@ La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, co
 
 Revisar y ejecutar cada comando, hacerlo como practica.
 
->>Profesor Ariel Betancud
+> > Profesor Ariel Betancud
 
 ## LECTURA 1-B MIÉRCOLES 10 DE JUNIO DEL 2026
->Configura tus llaves SSH en local
+
+> Configura tus llaves SSH en local
 
 Si usamos GitHub solo con usuario y contraseña, si un día perdemos nuestra PC, perdemos todo, nuestras contraseñas y los proyectos de nuestros clientes están todos en riesgo. Esta es la forma en que muchos sitios web son jackeados, para evitar esto tenemos que agregar una capa de seguridad mucho más fuerte. Es aquí donde podemos comenzar a crear el entorno con llaves publicas y privadas. Esto tiene una ventaja, no solo es que nuestra seguridad será más fuerte, si no que ya no tendrás que poner nunca más tu usuario y contraseña.
 
@@ -729,6 +782,7 @@ Ahora vamos a crear unas llaves exclusivamente para nosotros.
 En este ejemplo, aprenderemos cómo configurar nuestras llaves SSH en local.
 
 Comandos:
+
 ```sh
 abrir git bash #Esto en window como administrador para tener todos los permisos necesarios
 abrir terminal #En ubuntu, y nos quedamos sin entrar a ningun proyecto o carpeta.
@@ -739,29 +793,37 @@ eval $(ssh-agent -s) #Encendemos el servidor de llaves SSH, ya esta corriendo
 ~ #Se utiliza virgulilla para poner la ruta, es una variable que tiene el nombre de nuestra carpeta home, esto para el siguiente comando, donde verás la virgulilla dentro del comando
 ssh-add ~/.ssh/id_gd456123 #Añadimos la ruta, no la .pub que es la publica, ponemos la ruta con el nombre del archivo privado, recordar que es una ruta, se debe poner el nombre de la carpeta que contiene la clave privada.
 ```
->>Para los que les cuesta, ¿Qué es una ruta? respondamos entre todos... pasar prompt a la IA
 
->>Pasamos a ver -> Cómo generar tus llaves SSH:
+> > Para los que les cuesta, ¿Qué es una ruta? respondamos entre todos... pasar prompt a la IA
 
->a. Generar tus llaves SSH**
-Recuerda que es muy buena idea proteger tu llave privada con una contraseña, lo hacemos de nuevo para repasar como se hace, esto es para que controles que has hecho todo bien:
-ssh-keygen -t rsa -b 4096 -C "tu@email.com"
->b. Terminar de configurar nuestro sistema.
->En Windows y Linux:
->Encender el “servidor” de llaves SSH de tu computadora:
+> > Pasamos a ver -> Cómo generar tus llaves SSH:
+
+> a. Generar tus llaves SSH\*\*
+> Recuerda que es muy buena idea proteger tu llave privada con una contraseña, lo hacemos de nuevo para repasar como se hace, esto es para que controles que has hecho todo bien:
+> ssh-keygen -t rsa -b 4096 -C "tu@email.com"
+> b. Terminar de configurar nuestro sistema.
+> En Windows y Linux:
+> Encender el “servidor” de llaves SSH de tu computadora:
+
 ```sh
 eval $(ssh-agent -s)
 ```
->Añadir tu llave SSH a este “servidor”:
+
+> Añadir tu llave SSH a este “servidor”:
+
 ```sh
 ssh-add ruta-donde-guardaste-tu-llave-privada
 ```
->En Mac:
-Encender el “servidor” de llaves SSH de tu computadora:
+
+> En Mac:
+> Encender el “servidor” de llaves SSH de tu computadora:
+
 ```sh
 eval "$(ssh-agent -s)"
 ```
+
 Si usas una versión de OSX superior a Mac Sierra (v10.12), debes crear o modificar un archivo “config” en la carpeta de tu usuario con el siguiente contenido (ten cuidado con las mayúsculas): vim config
+
 ```sh
 Host *
 AddKeysToAgent yes
@@ -770,15 +832,16 @@ IdentityFile ruta-donde-guardaste-tu-llave-privada
 Añadir tu llave SSH al “servidor” de llaves SSH de tu computadora (en caso de error puedes ejecutar este mismo comando pero sin el argumento -K):
 ssh-add -K ruta-donde-guardaste-tu-llave-privada
 ```
-Por último les quiero hablar del 2FA: Segundo Factor de Autenticación. Este se puede hacer con varios dispositivos, y deberías hacerlo, ante el robo o perdida de un celular o ordenador, deberías tener un respaldo ante esto, este 2FA se puede hacer con diferentes generadores de códigos  de seguridad.
 
->Para añadir un 2FA:
+Por último les quiero hablar del 2FA: Segundo Factor de Autenticación. Este se puede hacer con varios dispositivos, y deberías hacerlo, ante el robo o perdida de un celular o ordenador, deberías tener un respaldo ante esto, este 2FA se puede hacer con diferentes generadores de códigos de seguridad.
+
+> Para añadir un 2FA:
 
 1. Clic en nuestro perfil, arriba y a la derecha, seleccionamos...
 2. Settings
 3. Password and Authentication
 4. GitHub Mobile: GitHub Mobile can be used for two-factor authentication by installing the GitHub Mobile app and signing in to your account. -> GitHub Mobile se puede utilizar para la autenticación de 2FA instalando la aplicación GitHub Mobile e iniciando sesión en su cuenta.
-Esto quiere decir que también se utiliza la app de GitHub donde al iniciar sesión desde cualquier dispositivo nos muestra un número que debemos ingresar en la app de nuestro dispositivo celular.
+   Esto quiere decir que también se utiliza la app de GitHub donde al iniciar sesión desde cualquier dispositivo nos muestra un número que debemos ingresar en la app de nuestro dispositivo celular.
 5. Authenticator app: Edit
 
 Esto para agregar a través de un QR una app que genere cada 1 segundo nuevos códigos numéricos para la autenticación, yo recomiendo la aplicación: Twilio Authy Authenticator
@@ -789,5 +852,4 @@ La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, co
 
 Revisar y ejecutar cada comando, hacerlo como practica.
 
->>Profesor Ariel Betancud
-
+> > Profesor Ariel Betancud
